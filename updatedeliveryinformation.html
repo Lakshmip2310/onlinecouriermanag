@@ -1,0 +1,29 @@
+<?php
+session_start();
+?>
+
+<form name =" form1" method = "POST" action="updatedeliveryinformation.php">
+<body>
+<center>
+<h1>VIT Courier Services</h1>
+<br/><br/>
+<h2>UPDATE DELIVERY INFORMATION</h2>
+</center>
+<table align="center" height = 100 width = 200>
+<tr>
+<td style ="color: black;">Employee Id</td><td><input type ="number" size = "20" maxlength ="300" name = "EmployeeID" value="<?php echo $_SESSION['employeeid'];?>" ></td>
+</tr>
+<tr>
+<td style ="color: black;">Package #</td><td><input type ="number" size = "20" maxlength ="300" name = "packageid"></td>
+</tr>
+<tr>
+<td style="colour: black;">Deliver To(name)</td><td><input type ="text" size = "20" maxlength = "300" name = "DeliverTo"></td>
+</tr>
+<tr>
+<td><input type="submit" value="SUBMIT"></td>
+<td><input type="reset" value="RESET"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
